@@ -4,12 +4,17 @@
 	<title>reproductor</title>
 	</head>
 	<body>
-		<audio controls="controls" playsinline autoplay>
-			<source src="ClickTrack.mp3" type="audio/mp3">
-		</audio>
-		<audio controls="controls" playsinline autoplay>
-  			<source src="Guide.mp3" type="audio/mp3">
-		</audio>
+	<audio id="demo1" autoplay src="ClickTrack.mp3"></audio>
+	<audio id="demo2" autoplay src="Guide.mp3"></audio>
+	<div>
+  	<button onclick="document.getElementById('demo1').muted = !document.getElementById('demo1').muted;$(this).toggleClass('mute')">muted</button>
+  	<button onclick="document.getElementById('demo1').volume+=0.1">+ Volumen</button>
+  	<button onclick="document.getElementById('demo1').volume-=0.1">- Volumen</button>
+	</br>
+  	<button onclick="document.getElementById('demo2').muted = !document.getElementById('demo2').muted;$(this).toggleClass('mute')">muted</button>
+  	<button onclick="document.getElementById('demo2').volume+=0.1">+ Volumen</button>
+  	<button onclick="document.getElementById('demo2').volume-=0.1">- Volumen</button>
+	</div> 
 	</body>
 </html>
 
