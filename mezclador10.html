@@ -3,19 +3,69 @@
 	<head>
 	<title>reproductor</title>
 	</head>
-	<body onload="zoom()">
+<body onload="zoom()">
 	<audio id="demo1" autoplay src="ClickTrack.mp3"></audio>
 	<audio id="demo2" autoplay src="Guide.mp3"></audio>
-	<div>
-  	<button onclick="document.getElementById('demo1').muted = !document.getElementById('demo1').muted;$(this).toggleClass('mute')">muted</button>
-  	<button onclick="document.getElementById('demo1').volume+=0.1">+ Volumen</button>
-  	<button onclick="document.getElementById('demo1').volume-=0.1">- Volumen</button>
+	<audio id="demo3" autoplay src="Bass.mp3"></audio>
+	<audio id="demo4" autoplay src="Drums.mp3"></audio>
+	<audio id="demo5" autoplay src="EG1.mp3"></audio>
+	<audio id="demo6" autoplay src="EG2.mp3"></audio>
+	<audio id="demo7" autoplay src="Horns.mp3"></audio>
+	<audio id="demo8" autoplay src="Loop.mp3"></audio>
+	<audio id="demo9" autoplay src="Organ.mp3"></audio>
+	<audio id="demo10" autoplay src="Piano1.mp3"></audio>
+	<audio id="demo11" autoplay src="Piano2.mp3"></audio>
+	<audio id="demo12" autoplay src="Strings.mp3"></audio>
+	<div align="center">
+  	<button onclick="document.getElementById('demo1').volume+=0.1">+</button>
+  	<button onclick="document.getElementById('demo1').volume-=0.1">-</button>
+	<button onclick="document.getElementById('demo1').muted = !document.getElementById('demo1').muted;$(this).toggleClass('mute')">mute Click</button>
 	</br>
-  	<button onclick="document.getElementById('demo2').muted = !document.getElementById('demo2').muted;$(this).toggleClass('mute')">muted</button>
-  	<button onclick="document.getElementById('demo2').volume+=0.1">+ Volumen</button>
-  	<button onclick="document.getElementById('demo2').volume-=0.1">- Volumen</button>
+  	<button onclick="document.getElementById('demo2').volume+=0.1">+</button>
+  	<button onclick="document.getElementById('demo2').volume-=0.1">-</button>
+	<button onclick="document.getElementById('demo2').muted = !document.getElementById('demo2').muted;$(this).toggleClass('mute')">mute Guide</button>
+	</br>
+  	<button onclick="document.getElementById('demo3').volume+=0.1">+</button>
+  	<button onclick="document.getElementById('demo3').volume-=0.1">-</button>
+	<button onclick="document.getElementById('demo3').muted = !document.getElementById('demo3').muted;$(this).toggleClass('mute')">mute Guide</button>
+	</br>
+  	<button onclick="document.getElementById('demo4').volume+=0.1">+</button>
+  	<button onclick="document.getElementById('demo4').volume-=0.1">-</button>
+	<button onclick="document.getElementById('demo4').muted = !document.getElementById('demo4').muted;$(this).toggleClass('mute')">mute Guide</button>
+	</br>
+  	<button onclick="document.getElementById('demo5').volume+=0.1">+</button>
+  	<button onclick="document.getElementById('demo5').volume-=0.1">-</button>
+	<button onclick="document.getElementById('demo5').muted = !document.getElementById('demo5').muted;$(this).toggleClass('mute')">mute Guide</button>
+	</br>
+  	<button onclick="document.getElementById('demo6').volume+=0.1">+</button>
+  	<button onclick="document.getElementById('demo6').volume-=0.1">-</button>
+	<button onclick="document.getElementById('demo6').muted = !document.getElementById('demo6').muted;$(this).toggleClass('mute')">mute Guide</button>
+	</br>
+  	<button onclick="document.getElementById('demo7').volume+=0.1">+</button>
+  	<button onclick="document.getElementById('demo7').volume-=0.1">-</button>
+	<button onclick="document.getElementById('demo7').muted = !document.getElementById('demo7').muted;$(this).toggleClass('mute')">mute Guide</button>
+	</br>
+  	<button onclick="document.getElementById('demo8').volume+=0.1">+</button>
+  	<button onclick="document.getElementById('demo8').volume-=0.1">-</button>
+	<button onclick="document.getElementById('demo8').muted = !document.getElementById('demo8').muted;$(this).toggleClass('mute')">mute Guide</button>
+	</br>
+  	<button onclick="document.getElementById('demo9').volume+=0.1">+</button>
+  	<button onclick="document.getElementById('demo9').volume-=0.1">-</button>
+	<button onclick="document.getElementById('demo9').muted = !document.getElementById('demo9').muted;$(this).toggleClass('mute')">mute Guide</button>
+	</br>
+  	<button onclick="document.getElementById('demo10').volume+=0.1">+</button>
+  	<button onclick="document.getElementById('demo10').volume-=0.1">-</button>
+	<button onclick="document.getElementById('demo10').muted = !document.getElementById('demo10').muted;$(this).toggleClass('mute')">mute Guide</button>
+	</br>
+  	<button onclick="document.getElementById('demo11').volume+=0.1">+</button>
+  	<button onclick="document.getElementById('demo11').volume-=0.1">-</button>
+	<button onclick="document.getElementById('demo11').muted = !document.getElementById('demo11').muted;$(this).toggleClass('mute')">mute Guide</button>
+	</br>
+  	<button onclick="document.getElementById('demo12').volume+=0.1">+</button>
+  	<button onclick="document.getElementById('demo12').volume-=0.1">-</button>
+	<button onclick="document.getElementById('demo12').muted = !document.getElementById('demo12').muted;$(this).toggleClass('mute')">mute Guide</button>
 	</div> 
-	</body>
+</body>
 
 	<script>
 	function zoom() {
