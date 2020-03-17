@@ -3,7 +3,7 @@
 	<head>
 	<title>reproductor</title>
 	</head>
-	<body>
+	<body onload="zoom()">
 	<audio id="demo1" autoplay src="ClickTrack.mp3"></audio>
 	<audio id="demo2" autoplay src="Guide.mp3"></audio>
 	<div>
@@ -16,5 +16,11 @@
   	<button onclick="document.getElementById('demo2').volume-=0.1">- Volumen</button>
 	</div> 
 	</body>
+
+	<script>
+	function zoom() {
+        	    document.body.style.zoom = "400%" 
+	}
+	</script>
 </html>
 
