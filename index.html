@@ -341,6 +341,17 @@ var vid = document.getElementById("demo12");
 function disminuir12() { 
   alert(vid.readyState);
 } 
+</script>
+<script>
+var obj = document.getElementById('demo12');
+
+obj.addEventListener('loadeddata', function() {
+
+  if(obj.readyState = 4) {
+    obj.play();
+  }
+
+});
 </script> 
 
 </html>
