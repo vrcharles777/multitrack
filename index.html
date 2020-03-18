@@ -348,10 +348,10 @@ var obj1 = document.getElementById('demo12');
 
 obj1.addEventListener('loadeddata', function() {
 
-  if(obj1.readyState = 4) {
-	boton.disabled = true;
-  }else{
+  if(obj1.readyState != 4) {
 	boton.disabled = false;
+  }else{
+	boton.disabled = true;
   }
 
 });
