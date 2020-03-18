@@ -3,73 +3,83 @@
 	<head>
 	<title>reproductor</title>
 	</head>
-<body onload="zoom()">
+<body onload="zoom()" style="zoom: 400%;">
 	<button onclick="location.href='index.html'">ENSAMBLE 3y4</button>
-	<audio id="demo1" preload="auto" autoplay src="ClickTrack.mp3"></audio>
-	<audio id="demo2" preload="auto" autoplay src="Guide.mp3"></audio>
-	<audio id="demo3" preload="auto" autoplay src="Bass.mp3"></audio>
-	<audio id="demo4" preload="auto" autoplay src="Drums.mp3"></audio>
-	<audio id="demo5" preload="auto" autoplay src="EG1.mp3"></audio>
-	<audio id="demo6" preload="auto" autoplay src="EG2.mp3"></audio>
-	<audio id="demo7" preload="auto" autoplay src="Horns.mp3"></audio>
-	<audio id="demo8" preload="auto" autoplay src="Loop.mp3"></audio>
-	<audio id="demo9" preload="auto" autoplay src="Organ.mp3"></audio>
-	<audio id="demo10" preload="auto" autoplay src="Piano1.mp3"></audio>
-	<audio id="demo11" preload="auto" autoplay src="Piano2.mp3"></audio>
-	<audio id="demo12" preload="auto" autoplay src="Strings.mp3"></audio>
+	<audio id="demo1" preload="auto" autoplay="" src="ClickTrack.mp3"></audio>
+	<audio id="demo2" preload="auto" autoplay="" src="Guide.mp3"></audio>
+	<audio id="demo3" preload="auto" autoplay="" src="Bass.mp3"></audio>
+	<audio id="demo4" preload="auto" autoplay="" src="Drums.mp3"></audio>
+	<audio id="demo5" preload="auto" autoplay="" src="EG1.mp3"></audio>
+	<audio id="demo6" preload="auto" autoplay="" src="EG2.mp3"></audio>
+	<audio id="demo7" preload="auto" autoplay="" src="Horns.mp3"></audio>
+	<audio id="demo8" preload="auto" autoplay="" src="Loop.mp3"></audio>
+	<audio id="demo9" preload="auto" autoplay="" src="Organ.mp3"></audio>
+	<audio id="demo10" preload="auto" autoplay="" src="Piano1.mp3"></audio>
+	<audio id="demo11" preload="auto" autoplay="" src="Piano2.mp3"></audio>
+	<audio id="demo12" preload="auto" autoplay="" src="Strings.mp3"></audio>
 
 	<div align="center">
-  	<button id='aumentar1' onclick="aumentar1();document.getElementById('demo1').volume+=0.1">+</button>
-	<input type='text' size="1" id="cantidad1" value="0">
-  	<button id='disminuir1' onclick="disminuir1();document.getElementById('demo1').volume-=0.1">-</button>
+  	<button id="aumentar1" onclick="aumentar1();document.getElementById('demo1').volume+=0.1">+</button>
+	<input type="text" size="1" id="cantidad1" value="0">
+  	<button id="disminuir1" onclick="disminuir1();document.getElementById('demo1').volume-=0.1">-</button>
 	<button id="boton1" class="btn btn-danger" onclick="document.getElementById('demo1').muted = !document.getElementById('demo1').muted">mute2 Guide</button>
-	</br>
-  	<button id='aumentar2' onclick="aumentar2();document.getElementById('demo2').volume+=0.1">+</button>
-	<input type='text' size="1" id="cantidad2" value="0">
-  	<button id='disminuir2' onclick="disminuir2();document.getElementById('demo2').volume-=0.1">-</button>
+	<br>
+  	<button id="aumentar2" onclick="aumentar2();document.getElementById('demo2').volume+=0.1">+</button>
+	<input type="text" size="1" id="cantidad2" value="0">
+  	<button id="disminuir2" onclick="disminuir2();document.getElementById('demo2').volume-=0.1">-</button>
 	<button id="boton2" class="btn btn-danger" onclick="document.getElementById('demo2').muted = !document.getElementById('demo2').muted">mutee Guide</button>
-	</br>
-  	<button onclick="document.getElementById('demo3').volume+=0.1">+</button>
-  	<button onclick="document.getElementById('demo3').volume-=0.1">-</button>
-	<button onclick="document.getElementById('demo3').muted = !document.getElementById('demo3').muted;$(this).toggleClass('mute')">mute Guide</button>
-	</br>
-  	<button onclick="document.getElementById('demo4').volume+=0.1">+</button>
-  	<button onclick="document.getElementById('demo4').volume-=0.1">-</button>
-	<button onclick="document.getElementById('demo4').muted = !document.getElementById('demo4').muted;$(this).toggleClass('mute')">mute Guide</button>
-	</br>
-  	<button onclick="document.getElementById('demo5').volume+=0.1">+</button>
-  	<button onclick="document.getElementById('demo5').volume-=0.1">-</button>
-	<button onclick="document.getElementById('demo5').muted = !document.getElementById('demo5').muted;$(this).toggleClass('mute')">mute Guide</button>
-	</br>
-  	<button onclick="document.getElementById('demo6').volume+=0.1">+</button>
-  	<button onclick="document.getElementById('demo6').volume-=0.1">-</button>
-	<button onclick="document.getElementById('demo6').muted = !document.getElementById('demo6').muted;$(this).toggleClass('mute')">mute Guide</button>
-	</br>
-  	<button onclick="document.getElementById('demo7').volume+=0.1">+</button>
-  	<button onclick="document.getElementById('demo7').volume-=0.1">-</button>
-	<button onclick="document.getElementById('demo7').muted = !document.getElementById('demo7').muted;$(this).toggleClass('mute')">mute Guide</button>
-	</br>
-  	<button onclick="document.getElementById('demo8').volume+=0.1">+</button>
-  	<button onclick="document.getElementById('demo8').volume-=0.1">-</button>
-	<button onclick="document.getElementById('demo8').muted = !document.getElementById('demo8').muted;$(this).toggleClass('mute')">mute Guide</button>
-	</br>
-  	<button onclick="document.getElementById('demo9').volume+=0.1">+</button>
-  	<button onclick="document.getElementById('demo9').volume-=0.1">-</button>
-	<button onclick="document.getElementById('demo9').muted = !document.getElementById('demo9').muted;$(this).toggleClass('mute')">mute Guide</button>
-	</br>
-  	<button onclick="document.getElementById('demo10').volume+=0.1">+</button>
-  	<button onclick="document.getElementById('demo10').volume-=0.1">-</button>
-	<button onclick="document.getElementById('demo10').muted = !document.getElementById('demo10').muted;$(this).toggleClass('mute')">mute Guide</button>
-	</br>
-  	<button onclick="document.getElementById('demo11').volume+=0.1">+</button>
-  	<button onclick="document.getElementById('demo11').volume-=0.1">-</button>
-	<button onclick="document.getElementById('demo11').muted = !document.getElementById('demo11').muted;$(this).toggleClass('mute')">mute Guide</button>
-	</br>
-  	<button onclick="document.getElementById('demo12').volume+=0.1">+</button>
-  	<button onclick="document.getElementById('demo12').volume-=0.1">-</button>
-	<button onclick="document.getElementById('demo12').muted = !document.getElementById('demo12').muted;$(this).toggleClass('mute')">mute12 Guide</button>
+	<br>
+  	<button id="aumentar3" onclick="aumentar3();document.getElementById('demo3').volume+=0.1">+</button>
+	<input type="text" size="1" id="cantidad3" value="0">
+  	<button id="disminuir3" onclick="disminuir3();document.getElementById('demo3').volume-=0.1">-</button>
+	<button id="boton3" class="btn btn-danger" onclick="document.getElementById('demo3').muted = !document.getElementById('demo3').muted">mutee Guide</button>
+	<br>
+  	<button id="aumentar4" onclick="aumentar4();document.getElementById('demo4').volume+=0.1">+</button>
+	<input type="text" size="1" id="cantidad4" value="0">
+  	<button id="disminuir4" onclick="disminuir4();document.getElementById('demo4').volume-=0.1">-</button>
+	<button id="boton4" class="btn btn-danger" onclick="document.getElementById('demo4').muted = !document.getElementById('demo4').muted">mutee Guide</button>
+	<br>
+  	<button id="aumentar5" onclick="aumentar5();document.getElementById('demo5').volume+=0.1">+</button>
+	<input type="text" size="1" id="cantidad5" value="0">
+  	<button id="disminuir5" onclick="disminuir5();document.getElementById('demo5').volume-=0.1">-</button>
+	<button id="boton5" class="btn btn-danger" onclick="document.getElementById('demo5').muted = !document.getElementById('demo5').muted">mutee Guide</button>
+	<br>
+  	<button id="aumentar6" onclick="aumentar6();document.getElementById('demo6').volume+=0.1">+</button>
+	<input type="text" size="1" id="cantidad6" value="0">
+  	<button id="disminuir6" onclick="disminuir6();document.getElementById('demo6').volume-=0.1">-</button>
+	<button id="boton6" class="btn btn-danger" onclick="document.getElementById('demo6').muted = !document.getElementById('demo6').muted">mutee Guide</button>
+	<br>
+  	<button id="aumentar7" onclick="aumentar7();document.getElementById('demo7').volume+=0.1">+</button>
+	<input type="text" size="1" id="cantidad7" value="0">
+  	<button id="disminuir7" onclick="disminuir7();document.getElementById('demo7').volume-=0.1">-</button>
+	<button id="boton7" class="btn btn-danger" onclick="document.getElementById('demo7').muted = !document.getElementById('demo7').muted">mutee Guide</button>
+	<br>
+  	<button id="aumentar8" onclick="aumentar8();document.getElementById('demo8').volume+=0.1">+</button>
+	<input type="text" size="1" id="cantidad8" value="0">
+  	<button id="disminuir8" onclick="disminuir8();document.getElementById('demo8').volume-=0.1">-</button>
+	<button id="boton8" class="btn btn-danger" onclick="document.getElementById('demo8').muted = !document.getElementById('demo8').muted">mutee Guide</button>
+	<br>
+  	<button id="aumentar9" onclick="aumentar9();document.getElementById('demo9').volume+=0.1">+</button>
+	<input type="text" size="1" id="cantidad9" value="0">
+  	<button id="disminuir9" onclick="disminuir9();document.getElementById('demo9').volume-=0.1">-</button>
+	<button id="boton9" class="btn btn-danger" onclick="document.getElementById('demo9').muted = !document.getElementById('demo9').muted">mutee Guide</button>
+	<br>
+  	<button id="aumentar10" onclick="aumentar10();document.getElementById('demo10').volume+=0.1">+</button>
+	<input type="text" size="1" id="cantidad10" value="0">
+  	<button id="disminuir10" onclick="disminuir10();document.getElementById('demo10').volume-=0.1">-</button>
+	<button id="boton10" class="btn btn-danger" onclick="document.getElementById('demo10').muted = !document.getElementById('demo10').muted">mutee Guide</button>
+	<br>
+  	<button id="aumentar11" onclick="aumentar11();document.getElementById('demo11').volume+=0.1">+</button>
+	<input type="text" size="1" id="cantidad11" value="0">
+  	<button id="disminuir11" onclick="disminuir11();document.getElementById('demo11').volume-=0.1">-</button>
+	<button id="boton11" class="btn btn-danger" onclick="document.getElementById('demo11').muted = !document.getElementById('demo11').muted">mutee Guide</button>
+	<br>
+  	<button id="aumentar12" onclick="aumentar12();document.getElementById('demo12').volume+=0.1">+</button>
+	<input type="text" size="1" id="cantidad12" value="0">
+  	<button id="disminuir12" onclick="disminuir12();document.getElementById('demo12').volume-=0.1">-</button>
+	<button id="boton12" class="btn btn-danger" onclick="document.getElementById('demo12').muted = !document.getElementById('demo12').muted">mutee Guide</button>
 	</div>
-<link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" rel=stylesheet>
+<link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -80,6 +90,56 @@
 </script>
 <script>
 	$("#boton2").click(function(){
+  		$(this).toggleClass("btn-danger btn-success");
+	});
+</script>
+<script>
+	$("#boton3").click(function(){
+  		$(this).toggleClass("btn-danger btn-success");
+	});
+</script>
+<script>
+	$("#boton4").click(function(){
+  		$(this).toggleClass("btn-danger btn-success");
+	});
+</script>
+<script>
+	$("#boton5").click(function(){
+  		$(this).toggleClass("btn-danger btn-success");
+	});
+</script>
+<script>
+	$("#boton6").click(function(){
+  		$(this).toggleClass("btn-danger btn-success");
+	});
+</script>
+<script>
+	$("#boton7").click(function(){
+  		$(this).toggleClass("btn-danger btn-success");
+	});
+</script>
+<script>
+	$("#boton8").click(function(){
+  		$(this).toggleClass("btn-danger btn-success");
+	});
+</script>
+<script>
+	$("#boton9").click(function(){
+  		$(this).toggleClass("btn-danger btn-success");
+	});
+</script>
+<script>
+	$("#boton10").click(function(){
+  		$(this).toggleClass("btn-danger btn-success");
+	});
+</script>
+<script>
+	$("#boton11").click(function(){
+  		$(this).toggleClass("btn-danger btn-success");
+	});
+</script>
+<script>
+	$("#boton12").click(function(){
   		$(this).toggleClass("btn-danger btn-success");
 	});
 </script>
@@ -99,6 +159,96 @@
 	}
 	function disminuir2(){
 	var cantidad2 = document.getElementById('cantidad2').value = --inicio;
+	}
+</script>
+<script>
+	var inicio = 0;
+	function aumentar3(){
+	var cantidad3 = document.getElementById('cantidad3').value = ++inicio;
+	}
+	function disminuir3(){
+	var cantidad3 = document.getElementById('cantidad3').value = --inicio;
+	}
+</script>
+<script>
+	var inicio = 0;
+	function aumentar4(){
+	var cantidad4 = document.getElementById('cantidad4').value = ++inicio;
+	}
+	function disminuir4(){
+	var cantidad4 = document.getElementById('cantidad4').value = --inicio;
+	}
+</script>
+<script>
+	var inicio = 0;
+	function aumentar5(){
+	var cantidad5 = document.getElementById('cantidad5').value = ++inicio;
+	}
+	function disminuir5(){
+	var cantidad5 = document.getElementById('cantidad5').value = --inicio;
+	}
+</script>
+<script>
+	var inicio = 0;
+	function aumentar6(){
+	var cantidad6 = document.getElementById('cantidad6').value = ++inicio;
+	}
+	function disminuir6(){
+	var cantidad6 = document.getElementById('cantidad6').value = --inicio;
+	}
+</script>
+<script>
+	var inicio = 0;
+	function aumentar7(){
+	var cantidad7 = document.getElementById('cantidad7').value = ++inicio;
+	}
+	function disminuir7(){
+	var cantidad7 = document.getElementById('cantidad7').value = --inicio;
+	}
+</script>
+<script>
+	var inicio = 0;
+	function aumentar8(){
+	var cantidad8 = document.getElementById('cantidad8').value = ++inicio;
+	}
+	function disminuir8(){
+	var cantidad8 = document.getElementById('cantidad8').value = --inicio;
+	}
+</script>
+<script>
+	var inicio = 0;
+	function aumentar9(){
+	var cantidad9 = document.getElementById('cantidad9').value = ++inicio;
+	}
+	function disminuir9(){
+	var cantidad9 = document.getElementById('cantidad9').value = --inicio;
+	}
+</script>
+<script>
+	var inicio = 0;
+	function aumentar10(){
+	var cantidad10 = document.getElementById('cantidad10').value = ++inicio;
+	}
+	function disminuir10(){
+	var cantidad10 = document.getElementById('cantidad10').value = --inicio;
+	}
+</script>
+<script>
+	var inicio = 0;
+	function aumentar11(){
+	var cantidad11 = document.getElementById('cantidad11').value = ++inicio;
+	}
+	function disminuir11(){
+	var cantidad11 = document.getElementById('cantidad11').value = --inicio;
+	}
+</script>
+<script>
+	var inicio = 0;
+	function aumentar12(){
+	var cantidad12 = document.getElementById('cantidad12').value = ++inicio;
+	}
+	function disminuir12(){
+	var cantidad12 = document.getElementById('cantidad12').value = --inicio;
 	}
 </script>
 <script>
