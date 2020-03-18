@@ -4,7 +4,7 @@
 	<title>reproductor</title>
 	</head>
 <body onload="zoom()" style="zoom: 400%;">
-	<button onclick="location.href='index.html'">ENSAMBLE 3y4</button>
+	
 	<audio id="demo1" preload="auto" autoplay="" src="ClickTrack.mp3"></audio>
 	<audio id="demo2" preload="auto" autoplay="" src="Guide.mp3"></audio>
 	<audio id="demo3" preload="auto" autoplay="" src="Bass.mp3"></audio>
@@ -19,6 +19,8 @@
 	<audio id="demo12" preload="auto" autoplay="" src="Strings.mp3"></audio>
 
 	<div align="center">
+	<button onclick="document.getElementById('demo1').play();getElementById('demo2').play();getElementById('demo3').play();getElementById('demo4').play();getElementById('demo5').play();getElementById('demo6').play();getElementById('demo7').play();getElementById('demo8').play();getElementById('demo9').play();getElementById('demo10').play();getElementById('demo11').play();getElementById('demo12').play()">Reproducir el Audio</button>
+	<br>
   	<button id="aumentar1" onclick="aumentar1();document.getElementById('demo1').volume+=0.1">+</button>
 	<input type="text" size="1" id="cantidad1" value="0">
   	<button id="disminuir1" onclick="disminuir1();document.getElementById('demo1').volume-=0.1">-</button>
