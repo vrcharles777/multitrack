@@ -344,10 +344,9 @@ function disminuir12() {
 </script>
 
 <script>
+obj1.addEventListener('loadeddata', function() {
 var boton = document.getElementById('demo1').play();getElementById('demo2').play();getElementById('demo3').play();getElementById('demo4').play();getElementById('demo5').play();getElementById('demo6').play();getElementById('demo7').play();getElementById('demo8').play();getElementById('demo9').play();getElementById('demo10').play();getElementById('demo11').play();getElementById('demo12').play();
 var obj1 = document.getElementById('demo12');
-obj1.addEventListener('loadeddata', function() {
-
   if(obj1.readyState != 4) {
 	boton.disabled = true;
   }else{
