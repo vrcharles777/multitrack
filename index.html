@@ -263,10 +263,10 @@
 <script>
 var vid = document.getElementById("demo12");
 function carga() {
-	if (vid.readyState == 4){
-	document.getElementById('demo3').play();document.getElementById('demo4').play();document.getElementById('demo5').play();document.getElementById('demo6').play();document.getElementById('demo7').play();document.getElementById('demo8').play();document.getElementById('demo9').play();document.getElementById('demo10').play();document.getElementById('demo11').play();document.getElementById('demo12').play();
+	if (vid.readyState == 1 && vid.readyState == 2 && vid.readyState == 3 && vid.readyState == 4 && vid.readyState == 5 && vid.readyState == 6 && vid.readyState == 7 && vid.readyState == 8 && vid.readyState == 9 && vid.readyState == 10 && vid.readyState == 11 && vid.readyState == 12){
+	alert("bien");
 	}else{
-	alert("mal");
+	alert("deja que cargue");
 	}
 }
 </script>
