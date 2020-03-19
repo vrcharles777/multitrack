@@ -5,22 +5,22 @@
 	</head>
 <body onload="zoom()" style="zoom: 400%;">
 	
-	<audio id="demo1" oncanplay preload="auto" src="ClickTrack.mp3"></audio>
-	<audio id="demo2" oncanplay preload="auto" src="Guide.mp3"></audio>
-	<audio id="demo3" oncanplay preload="auto" src="Bass.mp3"></audio>
-	<audio id="demo4" oncanplay preload="auto" src="Drums.mp3"></audio>
-	<audio id="demo5" oncanplay preload="auto" src="EG1.mp3"></audio>
-	<audio id="demo6" oncanplay preload="auto" src="EG2.mp3"></audio>
-	<audio id="demo7" oncanplay preload="auto" src="Horns.mp3"></audio>
-	<audio id="demo8" oncanplay preload="auto" src="Loop.mp3"></audio>
-	<audio id="demo9" oncanplay preload="auto" src="Organ.mp3"></audio>
-	<audio id="demo10" oncanplay preload="auto" src="Piano1.mp3"></audio>
-	<audio id="demo11" oncanplay preload="auto" src="Piano2.mp3"></audio>
-	<audio id="demo12" oncanplay preload="auto" src="Strings.mp3"></audio>
+	<audio id="demo1" preload="auto" src="ClickTrack.mp3"></audio>
+	<audio id="demo2" preload="auto" src="Guide.mp3"></audio>
+	<audio id="demo3" preload="auto" src="Bass.mp3"></audio>
+	<audio id="demo4" preload="auto" src="Drums.mp3"></audio>
+	<audio id="demo5" preload="auto" src="EG1.mp3"></audio>
+	<audio id="demo6" preload="auto" src="EG2.mp3"></audio>
+	<audio id="demo7" preload="auto" src="Horns.mp3"></audio>
+	<audio id="demo8" preload="auto" src="Loop.mp3"></audio>
+	<audio id="demo9" preload="auto" src="Organ.mp3"></audio>
+	<audio id="demo10" preload="auto" src="Piano1.mp3"></audio>
+	<audio id="demo11" preload="auto" src="Piano2.mp3"></audio>
+	<audio id="demo12" preload="auto" src="Strings.mp3"></audio>
 
 	<div>
 	<button onclick="location.href='index.html'">RELOAD</button>
-	<button onclick="document.getElementById('demo1').play();getElementById('demo2').play();getElementById('demo3').play();getElementById('demo4').play();getElementById('demo5').play();getElementById('demo6').play();getElementById('demo7').play();getElementById('demo8').play();getElementById('demo9').play();getElementById('demo10').play();getElementById('demo11').play();getElementById('demo12').play()">PLAY</button>
+	<button id="comprobar" onclick="carga()">REPRODUCIR</button>
 	<button onclick="document.getElementById('demo1').pause();getElementById('demo2').pause();getElementById('demo3').pause();getElementById('demo4').pause();getElementById('demo5').pause();getElementById('demo6').pause();getElementById('demo7').pause();getElementById('demo8').pause();getElementById('demo9').pause();getElementById('demo10').pause();getElementById('demo11').pause();getElementById('demo12').pause()">PAUSA</button>
 	<br>
   	<button id="aumentar1" onclick="aumentar1();document.getElementById('demo1').volume+=0.1">+</button>
@@ -260,7 +260,27 @@
         	    document.body.style.zoom = "400%" 
 	}
 </script>
-
+<script>
+var vid1 = document.getElementById("demo1");
+var vid2 = document.getElementById("demo2");
+var vid3 = document.getElementById("demo3");
+var vid4 = document.getElementById("demo4");
+var vid5 = document.getElementById("demo5");
+var vid6 = document.getElementById("demo6");
+var vid7 = document.getElementById("demo7");
+var vid8 = document.getElementById("demo8");
+var vid9 = document.getElementById("demo9");
+var vid10 = document.getElementById("demo10");
+var vid11 = document.getElementById("demo11");
+var vid12 = document.getElementById("demo12");
+function carga() {
+	if (vid1.readyState == 4 && vid2.readyState == 4 && vid3.readyState == 4 && vid4.readyState == 4 && vid5.readyState == 4 && vid6.readyState == 4 && vid7.readyState == 4 && vid8.readyState == 4 && vid9.readyState == 4 && vid10.readyState == 4 && vid11.readyState == 4 && vid12.readyState == 4){
+	document.getElementById('demo1').play();document.getElementById('demo2').play();document.getElementById('demo3').play();document.getElementById('demo4').play();document.getElementById('demo5').play();document.getElementById('demo6').play();document.getElementById('demo7').play();document.getElementById('demo8').play();document.getElementById('demo9').play();document.getElementById('demo10').play();document.getElementById('demo11').play();document.getElementById('demo12').play();
+	}else{
+	alert("Espera que cargue para reproducir la cancion");
+	}
+}
+</script>
 
 
 
