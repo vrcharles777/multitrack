@@ -9,8 +9,9 @@
 	<button id="comprobar" onclick="carga()">PLAY</button>
 	<button onclick="document.getElementById('demo1').pause();getElementById('demo2').pause();getElementById('demo3').pause();getElementById('demo4').pause();getElementById('demo5').pause();getElementById('demo6').pause();getElementById('demo7').pause();getElementById('demo8').pause();getElementById('demo9').pause();getElementById('demo10').pause();getElementById('demo11').pause();getElementById('demo12').pause()">PAUSA</button>
 	<br>
-	<div>
-	<button name="boton1" id="boton1" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
+<table class="egt">
+  	<tr>
+	<td><button name="boton1" id="boton1" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 //var classes = ['btn-success','btn-danger'];	ahora mismo esto no hace nada
 
@@ -96,15 +97,15 @@ for(var x=0;x<t;x++){
 	}
 
 }
-">Solo</button>
-  	<button name="aumentar1" id="aumentar1" onclick="aumentar1();document.getElementById('demo1').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad1" value="volumen">
-  	<button name="disminuir1" id="disminuir1" onclick="disminuir1();document.getElementById('demo1').volume-=0.1">-</button>
-	<button name="boton1m" id="boton1m" class="btn btn-danger" onclick="document.getElementById('demo1').muted = !document.getElementById('demo1').muted">Mute Click</button>
-	<audio controls="controls" id="demo1" preload="auto" src="ClickTrack.mp3"></audio>
-	</div>
-	<br>
-	<button name="boton2" id="boton2" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
+">Solo</button></td>
+  	<td><button name="aumentar1" id="aumentar1" onclick="aumentar1();document.getElementById('demo1').volume+=0.1">+</button></td>
+	<td><input type="text" size="1" id="cantidad1" value="volumen"></td>
+  	<td><button name="disminuir1" id="disminuir1" onclick="disminuir1();document.getElementById('demo1').volume-=0.1">-</button></td>
+	<td><button name="boton1m" id="boton1m" class="btn btn-danger" onclick="document.getElementById('demo1').muted = !document.getElementById('demo1').muted">Mute Click</button></td>
+	<td><audio controls="controls" id="demo1" preload="auto" src="ClickTrack.mp3"></audio></td>
+	</tr>
+	<tr>
+	<td><button name="boton2" id="boton2" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 var classes = ['btn-success','btn-danger'];
 
@@ -187,14 +188,15 @@ for(var x=0;x<t;x++){
 	}
 
 }
-">Solo</button>
+">Solo</button></td>
 
-	<button id="aumentar2" onclick="aumentar2();document.getElementById('demo2').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad2" value="volumen">
-  	<button id="disminuir2" onclick="disminuir2();document.getElementById('demo2').volume-=0.1">-</button>
-	<button id="boton2" class="btn btn-danger" onclick="document.getElementById('demo2').muted = !document.getElementById('demo2').muted">Mute Guide</button>
-	<audio controls="controls" id="demo2" preload="auto" src="Guide.mp3"></audio>
-	<br>
+	<td><button id="aumentar2" onclick="aumentar2();document.getElementById('demo2').volume+=0.1">+</button></td>
+	<td><input type="text" size="1" id="cantidad2" value="volumen"></td>
+  	<td><button id="disminuir2" onclick="disminuir2();document.getElementById('demo2').volume-=0.1">-</button></td>
+	<td><button id="boton2" class="btn btn-danger" onclick="document.getElementById('demo2').muted = !document.getElementById('demo2').muted">Mute Guide</button></td>
+	<td><audio controls="controls" id="demo2" preload="auto" src="Guide.mp3"></audio></td>
+	</tr>
+	</table>
 	<button name="boton3" id="boton3" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 var classes = ['btn-success','btn-danger'];
