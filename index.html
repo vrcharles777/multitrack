@@ -2,20 +2,35 @@
 <html>
 	<head>
 	<title>reproductor</title>
+
 	</head>
 <body onload="zoom()" style="zoom: 200%;">
+	
+	<audio id="demo1" preload="auto" src="ClickTrack.mp3"></audio>
+	<audio id="demo2" preload="auto" src="Guide.mp3"></audio>
+	<audio id="demo3" preload="auto" src="Bass.mp3"></audio>
+	<audio id="demo4" preload="auto" src="Drums.mp3"></audio>
+	<audio id="demo5" preload="auto" src="EG1.mp3"></audio>
+	<audio id="demo6" preload="auto" src="EG2.mp3"></audio>
+	<audio id="demo7" preload="auto" src="Horns.mp3"></audio>
+	<audio id="demo8" preload="auto" src="Loop.mp3"></audio>
+	<audio id="demo9" preload="auto" src="Organ.mp3"></audio>
+	<audio id="demo10" preload="auto" src="Piano1.mp3"></audio>
+	<audio id="demo11" preload="auto" src="Piano2.mp3"></audio>
+	<audio id="demo12" preload="auto" src="Strings.mp3"></audio>
+
 
 	<button onclick="location.href='index.html'">RELOAD</button>
-	<button id="comprobar" onclick="carga()">PLAY</button>
+	<button id="comprobar" onclick="rep1('demo1');rep2('demo2');rep3('demo3');rep4('demo4');rep5('demo5');rep6('demo6');rep7('demo7');rep8('demo8');rep9('demo9');rep10('demo10');rep11('demo11');rep12('demo12');carga()">PLAY</button>
 	<button onclick="document.getElementById('demo1').pause();getElementById('demo2').pause();getElementById('demo3').pause();getElementById('demo4').pause();getElementById('demo5').pause();getElementById('demo6').pause();getElementById('demo7').pause();getElementById('demo8').pause();getElementById('demo9').pause();getElementById('demo10').pause();getElementById('demo11').pause();getElementById('demo12').pause()">PAUSA</button>
 	<br>
-	<div>
+	<span id="tiempox1"></span>
 	<button name="boton1" id="boton1" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
-//var classes = ['btn-success','btn-danger'];	ahora mismo esto no hace nada
+var classes = ['btn-success','btn-danger'];
 
 var b=elements.length;
-//var j=classes.length;	ahora mismo esto no hace nada
+var j=classes.length;
 
 var lista=[];
 for(var a = 0; a < b; a++) {
@@ -46,7 +61,7 @@ for(var x=0;x<t;x++){
 	}
 	if(listabotones[x]=='boton3'){
 		if(!document.getElementById('demo3').muted){
-			document.getElementById('demo3').muted = !document.getElementById('demo3').muted;
+			document.getElementById('demo3').muted = !document.getElementById('demo3').muted;7
 		}
 	}
 	if(listabotones[x]=='boton4'){
@@ -101,9 +116,8 @@ for(var x=0;x<t;x++){
 	<input type="text" size="1" id="cantidad1" value="volumen">
   	<button name="disminuir1" id="disminuir1" onclick="disminuir1();document.getElementById('demo1').volume-=0.1">-</button>
 	<button name="boton1m" id="boton1m" class="btn btn-danger" onclick="document.getElementById('demo1').muted = !document.getElementById('demo1').muted">Mute Click</button>
-	<audio controls="controls" id="demo1" preload="auto" src="ClickTrack.mp3"></audio>
-	</div>
 	<br>
+	<span id="tiempox2"></span>
 	<button name="boton2" id="boton2" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 var classes = ['btn-success','btn-danger'];
@@ -137,7 +151,7 @@ for(var x=0;x<t;x++){
 	}
 	if(listabotones[x]=='boton3'){
 		if(!document.getElementById('demo3').muted){
-			document.getElementById('demo3').muted = !document.getElementById('demo3').muted;
+			document.getElementById('demo3').muted = !document.getElementById('demo3').muted;7
 		}
 	}
 	if(listabotones[x]=='boton4'){
@@ -193,8 +207,8 @@ for(var x=0;x<t;x++){
 	<input type="text" size="1" id="cantidad2" value="volumen">
   	<button id="disminuir2" onclick="disminuir2();document.getElementById('demo2').volume-=0.1">-</button>
 	<button id="boton2" class="btn btn-danger" onclick="document.getElementById('demo2').muted = !document.getElementById('demo2').muted">Mute Guide</button>
-	<audio controls="controls" id="demo2" preload="auto" src="Guide.mp3"></audio>
 	<br>
+	<span id="tiempox3"></span>
 	<button name="boton3" id="boton3" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 var classes = ['btn-success','btn-danger'];
@@ -228,7 +242,7 @@ for(var x=0;x<t;x++){
 	}
 	if(listabotones[x]=='boton2'){
 		if(!document.getElementById('demo2').muted){
-			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;
+			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;7
 		}
 	}
 	if(listabotones[x]=='boton4'){
@@ -283,8 +297,8 @@ for(var x=0;x<t;x++){
 	<input type="text" size="1" id="cantidad3" value="volumen">
   	<button id="disminuir3" onclick="disminuir3();document.getElementById('demo3').volume-=0.1">-</button>
 	<button name="boton3" id="boton3" class="btn btn-danger" onclick="document.getElementById('demo3').muted = !document.getElementById('demo3').muted">Mute Bass</button>
-	<audio controls="controls" id="demo3" preload="auto" src="Bass.mp3"></audio>
 	<br>
+	<span id="tiempox4"></span>
 <button name="boton4" id="boton4" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 var classes = ['btn-success','btn-danger'];
@@ -318,7 +332,7 @@ for(var x=0;x<t;x++){
 	}
 	if(listabotones[x]=='boton2'){
 		if(!document.getElementById('demo2').muted){
-			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;
+			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;7
 		}
 	}
 	if(listabotones[x]=='boton3'){
@@ -373,8 +387,8 @@ for(var x=0;x<t;x++){
 	<input type="text" size="1" id="cantidad4" value="volumen">
   	<button id="disminuir4" onclick="disminuir4();document.getElementById('demo4').volume-=0.1">-</button>
 	<button name="boton4" id="boton4" class="btn btn-danger" onclick="document.getElementById('demo4').muted = !document.getElementById('demo4').muted">Mute Drums</button>
-	<audio controls="controls" id="demo4" preload="auto" src="Drums.mp3"></audio>
 	<br>
+	<span id="tiempox5"></span>
 <button name="boton5" id="boton5" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 var classes = ['btn-success','btn-danger'];
@@ -408,7 +422,7 @@ for(var x=0;x<t;x++){
 	}
 	if(listabotones[x]=='boton2'){
 		if(!document.getElementById('demo2').muted){
-			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;
+			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;7
 		}
 	}
 	if(listabotones[x]=='boton3'){
@@ -463,8 +477,8 @@ for(var x=0;x<t;x++){
 	<input type="text" size="1" id="cantidad5" value="volumen">
   	<button id="disminuir5" onclick="disminuir5();document.getElementById('demo5').volume-=0.1">-</button>
 	<button name="boton5" id="boton5" class="btn btn-danger" onclick="document.getElementById('demo5').muted = !document.getElementById('demo5').muted">Mute EG1</button>
-	<audio controls="controls" id="demo5" preload="auto" src="EG1.mp3"></audio>
 	<br>
+	<span id="tiempox6"></span>
 <button name="boton6" id="boton6" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 var classes = ['btn-success','btn-danger'];
@@ -498,7 +512,7 @@ for(var x=0;x<t;x++){
 	}
 	if(listabotones[x]=='boton2'){
 		if(!document.getElementById('demo2').muted){
-			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;
+			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;7
 		}
 	}
 	if(listabotones[x]=='boton3'){
@@ -553,8 +567,8 @@ for(var x=0;x<t;x++){
 	<input type="text" size="1" id="cantidad6" value="volumen">
   	<button id="disminuir6" onclick="disminuir6();document.getElementById('demo6').volume-=0.1">-</button>
 	<button name="boton6" id="boton6" class="btn btn-danger" onclick="document.getElementById('demo6').muted = !document.getElementById('demo6').muted">Mute EG2</button>
-	<audio controls="controls" id="demo6" preload="auto" src="EG2.mp3"></audio>
 	<br>
+	<span id="tiempox7"></span>
 <button name="boton7" id="boton7" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 var classes = ['btn-success','btn-danger'];
@@ -588,7 +602,7 @@ for(var x=0;x<t;x++){
 	}
 	if(listabotones[x]=='boton2'){
 		if(!document.getElementById('demo2').muted){
-			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;
+			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;7
 		}
 	}
 	if(listabotones[x]=='boton3'){
@@ -643,8 +657,8 @@ for(var x=0;x<t;x++){
 	<input type="text" size="1" id="cantidad7" value="volumen">
   	<button id="disminuir7" onclick="disminuir7();document.getElementById('demo7').volume-=0.1">-</button>
 	<button name="boton7" id="boton7" class="btn btn-danger" onclick="document.getElementById('demo7').muted = !document.getElementById('demo7').muted">Mute Horns</button>
-	<audio controls="controls" id="demo7" preload="auto" src="Horns.mp3"></audio>
 	<br>
+	<span id="tiempox8"></span>
 <button name="boton8" id="boton8" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 var classes = ['btn-success','btn-danger'];
@@ -678,7 +692,7 @@ for(var x=0;x<t;x++){
 	}
 	if(listabotones[x]=='boton2'){
 		if(!document.getElementById('demo2').muted){
-			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;
+			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;7
 		}
 	}
 	if(listabotones[x]=='boton3'){
@@ -733,8 +747,8 @@ for(var x=0;x<t;x++){
 	<input type="text" size="1" id="cantidad8" value="volumen">
   	<button id="disminuir8" onclick="disminuir8();document.getElementById('demo8').volume-=0.1">-</button>
 	<button name="boton8" id="boton8" class="btn btn-danger" onclick="document.getElementById('demo8').muted = !document.getElementById('demo8').muted">Mute Loop</button>
-	<audio controls="controls" id="demo8" preload="auto" src="Loop.mp3"></audio>
 	<br>
+	<span id="tiempox9"></span>
 <button name="boton9" id="boton9" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 var classes = ['btn-success','btn-danger'];
@@ -768,7 +782,7 @@ for(var x=0;x<t;x++){
 	}
 	if(listabotones[x]=='boton2'){
 		if(!document.getElementById('demo2').muted){
-			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;
+			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;7
 		}
 	}
 	if(listabotones[x]=='boton3'){
@@ -823,8 +837,8 @@ for(var x=0;x<t;x++){
 	<input type="text" size="1" id="cantidad9" value="volumen">
   	<button id="disminuir9" onclick="disminuir9();document.getElementById('demo9').volume-=0.1">-</button>
 	<button id="boton9" class="btn btn-danger" onclick="document.getElementById('demo9').muted = !document.getElementById('demo9').muted">Mute Organ</button>
-	<audio controls="controls" id="demo9" preload="auto" src="Organ.mp3"></audio>
 	<br>
+	<span id="tiempox10"></span>
 <button name="boton10" id="boton10" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 var classes = ['btn-success','btn-danger'];
@@ -858,7 +872,7 @@ for(var x=0;x<t;x++){
 	}
 	if(listabotones[x]=='boton2'){
 		if(!document.getElementById('demo2').muted){
-			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;
+			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;7
 		}
 	}
 	if(listabotones[x]=='boton3'){
@@ -913,8 +927,8 @@ for(var x=0;x<t;x++){
 	<input type="text" size="1" id="cantidad10" value="volumen">
   	<button id="disminuir10" onclick="disminuir10();document.getElementById('demo10').volume-=0.1">-</button>
 	<button id="boton10" class="btn btn-danger" onclick="document.getElementById('demo10').muted = !document.getElementById('demo10').muted">Mute Piano1</button>
-	<audio controls="controls" id="demo10" preload="auto" src="Piano1.mp3"></audio>
 	<br>
+	<span id="tiempox11"></span>
 <button name="boton11" id="boton11" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 var classes = ['btn-success','btn-danger'];
@@ -948,7 +962,7 @@ for(var x=0;x<t;x++){
 	}
 	if(listabotones[x]=='boton2'){
 		if(!document.getElementById('demo2').muted){
-			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;
+			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;7
 		}
 	}
 	if(listabotones[x]=='boton3'){
@@ -1003,8 +1017,8 @@ for(var x=0;x<t;x++){
 	<input type="text" size="1" id="cantidad11" value="volumen">
   	<button id="disminuir11" onclick="disminuir11();document.getElementById('demo11').volume-=0.1">-</button>
 	<button id="boton11" class="btn btn-danger" onclick="document.getElementById('demo11').muted = !document.getElementById('demo11').muted">Mute Piano2</button>
-	<audio controls="controls" id="demo11" preload="auto" src="Piano2.mp3"></audio>
 	<br>
+	<span id="tiempox12"></span>
 <button name="boton12" id="boton12" class="btn btn-danger" onclick="var listabotones=['boton1','boton2','boton3','boton4','boton5','boton6','boton7','boton8','boton9','boton10','boton11','boton12'];
 var elements = document.getElementsByClassName('btn-success');
 var classes = ['btn-success','btn-danger'];
@@ -1038,7 +1052,7 @@ for(var x=0;x<t;x++){
 	}
 	if(listabotones[x]=='boton2'){
 		if(!document.getElementById('demo2').muted){
-			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;
+			document.getElementById('demo2').muted = !document.getElementById('demo3').muted;7
 		}
 	}
 	if(listabotones[x]=='boton3'){
@@ -1093,7 +1107,6 @@ for(var x=0;x<t;x++){
 	<input type="text" size="1" id="cantidad12" value="volumen">
   	<button id="disminuir12" onclick="disminuir12();document.getElementById('demo12').volume-=0.1">-</button>
 	<button id="boton12" class="btn btn-danger" onclick="document.getElementById('demo12').muted = !document.getElementById('demo12').muted">Mute Strings</button>
-	<audio controls="controls" id="demo12" preload="auto" src="Strings.mp3"></audio>
 
 	<link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </body>
@@ -1272,6 +1285,8 @@ for(var x=0;x<t;x++){
         	    document.body.style.zoom = "200%" 
 	}
 </script>
+
+
 <script>
 var vid1 = document.getElementById("demo1");
 var vid2 = document.getElementById("demo2");
@@ -1295,7 +1310,319 @@ function carga() {
 </script>
 
 
+<script type="text/javascript">
+var audio,ta,fin,tiempo;
 
+function rep1(demo1){
+audio=document.getElementById(demo1);
+audio.load();
+audio.play();
+var fin=window.setInterval(function(){
+    verifica_fin1();
+    },1000);
+}
+ 
+function verifica_fin1(){
+if(audio.ended){
+clearInterval(fin);
+}else{
+ta = Math.round(audio.currentTime);
+var segs = ta.toString();
+document.getElementById('tiempox1').innerHTML = segs.pasar_a_HHMMSS();
+}
+}
+</script>
 
+<script type="text/javascript">
+var audio,ta,fin,tiempo;
+
+function rep2(demo2){
+audio=document.getElementById(demo2);
+audio.load();
+audio.play();
+var fin=window.setInterval(function(){
+    verifica_fin2();
+    },1000);
+}
+ 
+function verifica_fin2(){
+if(audio.ended){
+clearInterval(fin);
+}else{
+ta = Math.round(audio.currentTime);
+var segs = ta.toString();
+document.getElementById('tiempox2').innerHTML = segs.pasar_a_HHMMSS();
+}
+}
+</script>
+
+<script type="text/javascript">
+var audio,ta,fin,tiempo;
+
+function rep3(demo3){
+audio=document.getElementById(demo3);
+audio.load();
+audio.play();
+var fin=window.setInterval(function(){
+    verifica_fin3();
+    },1000);
+}
+ 
+function verifica_fin3(){
+if(audio.ended){
+clearInterval(fin);
+}else{
+ta = Math.round(audio.currentTime);
+var segs = ta.toString();
+document.getElementById('tiempox3').innerHTML = segs.pasar_a_HHMMSS();
+}
+}
+</script>
+
+<script type="text/javascript">
+var audio,ta,fin,tiempo;
+
+function rep4(demo4){
+audio=document.getElementById(demo4);
+audio.load();
+audio.play();
+var fin=window.setInterval(function(){
+    verifica_fin4();
+    },1000);
+}
+ 
+function verifica_fin4(){
+if(audio.ended){
+clearInterval(fin);
+}else{
+ta = Math.round(audio.currentTime);
+var segs = ta.toString();
+document.getElementById('tiempox4').innerHTML = segs.pasar_a_HHMMSS();
+}
+}
+</script>
+
+<script type="text/javascript">
+var audio,ta,fin,tiempo;
+
+function rep5(demo5){
+audio=document.getElementById(demo5);
+audio.load();
+audio.play();
+var fin=window.setInterval(function(){
+    verifica_fin5();
+    },1000);
+}
+ 
+function verifica_fin5(){
+if(audio.ended){
+clearInterval(fin);
+}else{
+ta = Math.round(audio.currentTime);
+var segs = ta.toString();
+document.getElementById('tiempox5').innerHTML = segs.pasar_a_HHMMSS();
+}
+}
+</script>
+
+<script type="text/javascript">
+var audio,ta,fin,tiempo;
+
+function rep6(demo6){
+audio=document.getElementById(demo6);
+audio.load();
+audio.play();
+var fin=window.setInterval(function(){
+    verifica_fin6();
+    },1000);
+}
+ 
+function verifica_fin6(){
+if(audio.ended){
+clearInterval(fin);
+}else{
+ta = Math.round(audio.currentTime);
+var segs = ta.toString();
+document.getElementById('tiempox6').innerHTML = segs.pasar_a_HHMMSS();
+}
+}
+</script>
+
+<script type="text/javascript">
+var audio,ta,fin,tiempo;
+
+function rep7(demo7){
+audio=document.getElementById(demo7);
+audio.load();
+audio.play();
+var fin=window.setInterval(function(){
+    verifica_fin7();
+    },1000);
+}
+ 
+function verifica_fin7(){
+if(audio.ended){
+clearInterval(fin);
+}else{
+ta = Math.round(audio.currentTime);
+var segs = ta.toString();
+document.getElementById('tiempox7').innerHTML = segs.pasar_a_HHMMSS();
+}
+}
+</script>
+
+<script type="text/javascript">
+var audio,ta,fin,tiempo;
+
+function rep8(demo8){
+audio=document.getElementById(demo8);
+audio.load();
+audio.play();
+var fin=window.setInterval(function(){
+    verifica_fin8();
+    },1000);
+}
+ 
+function verifica_fin8(){
+if(audio.ended){
+clearInterval(fin);
+}else{
+ta = Math.round(audio.currentTime);
+var segs = ta.toString();
+document.getElementById('tiempox8').innerHTML = segs.pasar_a_HHMMSS();
+}
+}
+</script>
+
+<script type="text/javascript">
+var audio,ta,fin,tiempo;
+
+function rep9(demo9){
+audio=document.getElementById(demo9);
+audio.load();
+audio.play();
+var fin=window.setInterval(function(){
+    verifica_fin9();
+    },1000);
+}
+ 
+function verifica_fin9(){
+if(audio.ended){
+clearInterval(fin);
+}else{
+ta = Math.round(audio.currentTime);
+var segs = ta.toString();
+document.getElementById('tiempox9').innerHTML = segs.pasar_a_HHMMSS();
+}
+}
+</script>
+
+<script type="text/javascript">
+var audio,ta,fin,tiempo;
+
+function rep9(demo9){
+audio=document.getElementById(demo9);
+audio.load();
+audio.play();
+var fin=window.setInterval(function(){
+    verifica_fin9();
+    },1000);
+}
+ 
+function verifica_fin9(){
+if(audio.ended){
+clearInterval(fin);
+}else{
+ta = Math.round(audio.currentTime);
+var segs = ta.toString();
+document.getElementById('tiempox9').innerHTML = segs.pasar_a_HHMMSS();
+}
+}
+</script>
+
+<script type="text/javascript">
+var audio,ta,fin,tiempo;
+
+function rep10(demo10){
+audio=document.getElementById(demo10);
+audio.load();
+audio.play();
+var fin=window.setInterval(function(){
+    verifica_fin10();
+    },1000);
+}
+ 
+function verifica_fin10(){
+if(audio.ended){
+clearInterval(fin);
+}else{
+ta = Math.round(audio.currentTime);
+var segs = ta.toString();
+document.getElementById('tiempox10').innerHTML = segs.pasar_a_HHMMSS();
+}
+}
+</script>
+
+<script type="text/javascript">
+var audio,ta,fin,tiempo;
+
+function rep11(demo11){
+audio=document.getElementById(demo11);
+audio.load();
+audio.play();
+var fin=window.setInterval(function(){
+    verifica_fin11();
+    },1000);
+}
+ 
+function verifica_fin11(){
+if(audio.ended){
+clearInterval(fin);
+}else{
+ta = Math.round(audio.currentTime);
+var segs = ta.toString();
+document.getElementById('tiempox11').innerHTML = segs.pasar_a_HHMMSS();
+}
+}
+</script>
+
+<script type="text/javascript">
+var audio,ta,fin,tiempo;
+
+function rep12(demo12){
+audio=document.getElementById(demo12);
+audio.load();
+audio.play();
+var fin=window.setInterval(function(){
+    verifica_fin12();
+    },1000);
+}
+ 
+function verifica_fin12(){
+if(audio.ended){
+clearInterval(fin);
+}else{
+ta = Math.round(audio.currentTime);
+var segs = ta.toString();
+document.getElementById('tiempox12').innerHTML = segs.pasar_a_HHMMSS();
+}
+}
+</script>
+
+<script type="text/javascript">
+String.prototype.pasar_a_HHMMSS = function () {
+    var num_segs    = parseInt(this);
+    var horas   = Math.floor(num_segs / 3600);
+    var minutos = Math.floor((num_segs - (horas * 3600)) / 60);
+    var segundos = num_segs - (horas * 3600) - (minutos * 60);
+ 
+    if (horas   < 10) {horas   = "0"+horas;}
+    if (minutos < 10) {minutos = "0"+minutos;}
+    if (segundos < 10) {segundos = "0"+segundos;}
+    var tiempo    = horas+':'+minutos+':'+segundos;
+    return tiempo;
+}
+
+</script>
 
 </html>
