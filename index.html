@@ -18,72 +18,86 @@
 	<audio id="demo11" preload="auto" src="Piano2.mp3"></audio>
 	<audio id="demo12" preload="auto" src="Strings.mp3"></audio>
 
-	<div>
+
 	<button onclick="location.href='index.html'">RELOAD</button>
 	<button id="comprobar" onclick="carga()">PLAY</button>
 	<button onclick="document.getElementById('demo1').pause();getElementById('demo2').pause();getElementById('demo3').pause();getElementById('demo4').pause();getElementById('demo5').pause();getElementById('demo6').pause();getElementById('demo7').pause();getElementById('demo8').pause();getElementById('demo9').pause();getElementById('demo10').pause();getElementById('demo11').pause();getElementById('demo12').pause()">PAUSA</button>
 	<br>
-  	<button id="aumentar1" onclick="aumentar1();document.getElementById('demo1').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad1" value="volumen">
-  	<button id="disminuir1" onclick="disminuir1();document.getElementById('demo1').volume-=0.1">-</button>
-	<button id="boton1" class="btn btn-danger" onclick="document.getElementById('demo1').muted = !document.getElementById('demo1').muted">Mute Click</button>
-	<br>
-  	<button id="aumentar2" onclick="aumentar2();document.getElementById('demo2').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad2" value="volumen">
-  	<button id="disminuir2" onclick="disminuir2();document.getElementById('demo2').volume-=0.1">-</button>
-	<button id="boton2" class="btn btn-danger" onclick="document.getElementById('demo2').muted = !document.getElementById('demo2').muted">Mute Guide</button>
-	<br>
-  	<button id="aumentar3" onclick="aumentar3();document.getElementById('demo3').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad3" value="volumen">
-  	<button id="disminuir3" onclick="disminuir3();document.getElementById('demo3').volume-=0.1">-</button>
-	<button id="boton3" class="btn btn-danger" onclick="document.getElementById('demo3').muted = !document.getElementById('demo3').muted">Mute Bass</button>
-	<button id="boton3_1" class="btn btn-danger" onclick="document.getElementById('demo1').muted = !document.getElementById('demo1').muted;document.getElementById('demo2').muted = !document.getElementById('demo2').muted;document.getElementById('demo4').muted = !document.getElementById('demo4').muted;document.getElementById('demo5').muted = !document.getElementById('demo5').muted;document.getElementById('demo6').muted = !document.getElementById('demo6').muted;document.getElementById('demo7').muted = !document.getElementById('demo7').muted;document.getElementById('demo8').muted = !document.getElementById('demo8').muted;document.getElementById('demo9').muted = !document.getElementById('demo9').muted;document.getElementById('demo10').muted = !document.getElementById('demo10').muted;document.getElementById('demo11').muted = !document.getElementById('demo11').muted;document.getElementById('demo12').muted = !document.getElementById('demo12').muted">Solo Carlos</button>
-	<br>
-  	<button id="aumentar4" onclick="aumentar4();document.getElementById('demo4').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad4" value="volumen">
-  	<button id="disminuir4" onclick="disminuir4();document.getElementById('demo4').volume-=0.1">-</button>
-	<button id="boton4" class="btn btn-danger" onclick="document.getElementById('demo4').muted = !document.getElementById('demo4').muted">Mute Drums</button>
-	<br>
-  	<button id="aumentar5" onclick="aumentar5();document.getElementById('demo5').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad5" value="volumen">
-  	<button id="disminuir5" onclick="disminuir5();document.getElementById('demo5').volume-=0.1">-</button>
-	<button id="boton5" class="btn btn-danger" onclick="document.getElementById('demo5').muted = !document.getElementById('demo5').muted">Mute EG1</button>
-	<br>
-  	<button id="aumentar6" onclick="aumentar6();document.getElementById('demo6').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad6" value="volumen">
-  	<button id="disminuir6" onclick="disminuir6();document.getElementById('demo6').volume-=0.1">-</button>
-	<button id="boton6" class="btn btn-danger" onclick="document.getElementById('demo6').muted = !document.getElementById('demo6').muted">Mute EG2</button>
-	<br>
-  	<button id="aumentar7" onclick="aumentar7();document.getElementById('demo7').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad7" value="volumen">
-  	<button id="disminuir7" onclick="disminuir7();document.getElementById('demo7').volume-=0.1">-</button>
-	<button id="boton7" class="btn btn-danger" onclick="document.getElementById('demo7').muted = !document.getElementById('demo7').muted">Mute Horns</button>
-	<br>
-  	<button id="aumentar8" onclick="aumentar8();document.getElementById('demo8').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad8" value="volumen">
-  	<button id="disminuir8" onclick="disminuir8();document.getElementById('demo8').volume-=0.1">-</button>
-	<button id="boton8" class="btn btn-danger" onclick="document.getElementById('demo8').muted = !document.getElementById('demo8').muted">Mute Loop</button>
-	<br>
-  	<button id="aumentar9" onclick="aumentar9();document.getElementById('demo9').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad9" value="volumen">
-  	<button id="disminuir9" onclick="disminuir9();document.getElementById('demo9').volume-=0.1">-</button>
-	<button id="boton9" class="btn btn-danger" onclick="document.getElementById('demo9').muted = !document.getElementById('demo9').muted">Mute Organ</button>
-	<br>
-  	<button id="aumentar10" onclick="aumentar10();document.getElementById('demo10').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad10" value="volumen">
-  	<button id="disminuir10" onclick="disminuir10();document.getElementById('demo10').volume-=0.1">-</button>
-	<button id="boton10" class="btn btn-danger" onclick="document.getElementById('demo10').muted = !document.getElementById('demo10').muted">Mute Piano1</button>
-	<br>
-  	<button id="aumentar11" onclick="aumentar11();document.getElementById('demo11').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad11" value="volumen">
-  	<button id="disminuir11" onclick="disminuir11();document.getElementById('demo11').volume-=0.1">-</button>
-	<button id="boton11" class="btn btn-danger" onclick="document.getElementById('demo11').muted = !document.getElementById('demo11').muted">Mute Piano2</button>
-	<br>
-  	<button id="aumentar12" onclick="aumentar12();document.getElementById('demo12').volume+=0.1">+</button>
-	<input type="text" size="1" id="cantidad12" value="volumen">
-  	<button id="disminuir12" onclick="disminuir12();document.getElementById('demo12').volume-=0.1">-</button>
-	<button id="boton12" class="btn btn-danger" onclick="document.getElementById('demo12').muted = !document.getElementById('demo12').muted">Mute Strings</button>
-	</div>
+	<table class="egt">
+	<tr>
+  	<td><button id="aumentar1" onclick="aumentar1();document.getElementById('demo1').volume+=0.1">+</button></td>
+	<td><input type="text" size="1" id="cantidad1" value="volumen"></td>
+  	<td><button id="disminuir1" onclick="disminuir1();document.getElementById('demo1').volume-=0.1">-</button></td>
+	<td><button id="boton1" class="btn btn-danger" onclick="document.getElementById('demo1').muted = !document.getElementById('demo1').muted">Mute Click</button></td>
+	</tr>
+	<tr>
+  	<td><button id="aumentar2" onclick="aumentar2();document.getElementById('demo2').volume+=0.1">+</button></td>
+	<td><input type="text" size="1" id="cantidad2" value="volumen"></td>
+  	<td><button id="disminuir2" onclick="disminuir2();document.getElementById('demo2').volume-=0.1">-</button></td>
+	<td><button id="boton2" class="btn btn-danger" onclick="document.getElementById('demo2').muted = !document.getElementById('demo2').muted">Mute Guide</button></td>
+	</tr>
+	<tr>
+  	<td><button id="aumentar3" onclick="aumentar3();document.getElementById('demo3').volume+=0.1">+</button></td>
+	<td><input type="text" size="1" id="cantidad3" value="volumen"></td>
+  	<td><button id="disminuir3" onclick="disminuir3();document.getElementById('demo3').volume-=0.1">-</button></td>
+	<td><button id="boton3" class="btn btn-danger" onclick="document.getElementById('demo3').muted = !document.getElementById('demo3').muted">Mute Bass</button></td>
+	<td><button id="boton3_1" class="btn btn-danger" onclick="document.getElementById('demo1').muted = !document.getElementById('demo1').muted;document.getElementById('demo2').muted = !document.getElementById('demo2').muted;document.getElementById('demo4').muted = !document.getElementById('demo4').muted;document.getElementById('demo5').muted = !document.getElementById('demo5').muted;document.getElementById('demo6').muted = !document.getElementById('demo6').muted;document.getElementById('demo7').muted = !document.getElementById('demo7').muted;document.getElementById('demo8').muted = !document.getElementById('demo8').muted;document.getElementById('demo9').muted = !document.getElementById('demo9').muted;document.getElementById('demo10').muted = !document.getElementById('demo10').muted;document.getElementById('demo11').muted = !document.getElementById('demo11').muted;document.getElementById('demo12').muted = !document.getElementById('demo12').muted">Solo Carlos</button></td>
+	</tr>
+	<tr>
+  	<td><button id="aumentar4" onclick="aumentar4();document.getElementById('demo4').volume+=0.1">+</button>
+	<td><input type="text" size="1" id="cantidad4" value="volumen">
+  	<td><button id="disminuir4" onclick="disminuir4();document.getElementById('demo4').volume-=0.1">-</button>
+	<td><button id="boton4" class="btn btn-danger" onclick="document.getElementById('demo4').muted = !document.getElementById('demo4').muted">Mute Drums</button>
+	</tr>
+	<tr>
+  	<td><button id="aumentar5" onclick="aumentar5();document.getElementById('demo5').volume+=0.1">+</button></td>
+	<td><input type="text" size="1" id="cantidad5" value="volumen"></td>
+  	<td><button id="disminuir5" onclick="disminuir5();document.getElementById('demo5').volume-=0.1">-</button></td>
+	<td><button id="boton5" class="btn btn-danger" onclick="document.getElementById('demo5').muted = !document.getElementById('demo5').muted">Mute EG1</button></td>
+	</tr>
+	<tr>
+  	<td><button id="aumentar6" onclick="aumentar6();document.getElementById('demo6').volume+=0.1">+</button></td>
+	<td><input type="text" size="1" id="cantidad6" value="volumen"></td>
+  	<td><button id="disminuir6" onclick="disminuir6();document.getElementById('demo6').volume-=0.1">-</button></td>
+	<td><button id="boton6" class="btn btn-danger" onclick="document.getElementById('demo6').muted = !document.getElementById('demo6').muted">Mute EG2</button></td>
+	</tr>
+	<tr>
+  	<td><button id="aumentar7" onclick="aumentar7();document.getElementById('demo7').volume+=0.1">+</button></td>
+	<td><input type="text" size="1" id="cantidad7" value="volumen"></td>
+  	<td><button id="disminuir7" onclick="disminuir7();document.getElementById('demo7').volume-=0.1">-</button></td>
+	<td><button id="boton7" class="btn btn-danger" onclick="document.getElementById('demo7').muted = !document.getElementById('demo7').muted">Mute Horns</button></td>
+	</tr>
+	<tr>
+  	<td><button id="aumentar8" onclick="aumentar8();document.getElementById('demo8').volume+=0.1">+</button></td>
+	<td><input type="text" size="1" id="cantidad8" value="volumen"></td>
+  	<td><button id="disminuir8" onclick="disminuir8();document.getElementById('demo8').volume-=0.1">-</button></td>
+	<td><button id="boton8" class="btn btn-danger" onclick="document.getElementById('demo8').muted = !document.getElementById('demo8').muted">Mute Loop</button></td>
+	</tr>
+	<tr>
+  	<td><button id="aumentar9" onclick="aumentar9();document.getElementById('demo9').volume+=0.1">+</button></td>
+	<td><input type="text" size="1" id="cantidad9" value="volumen"></td>
+  	<td><button id="disminuir9" onclick="disminuir9();document.getElementById('demo9').volume-=0.1">-</button></td>
+	<td><button id="boton9" class="btn btn-danger" onclick="document.getElementById('demo9').muted = !document.getElementById('demo9').muted">Mute Organ</button></td>
+	</tr>
+	<tr>
+  	<td><button id="aumentar10" onclick="aumentar10();document.getElementById('demo10').volume+=0.1">+</button></td>
+	<td><input type="text" size="1" id="cantidad10" value="volumen"></td>
+  	<td><button id="disminuir10" onclick="disminuir10();document.getElementById('demo10').volume-=0.1">-</button></td>
+	<td><button id="boton10" class="btn btn-danger" onclick="document.getElementById('demo10').muted = !document.getElementById('demo10').muted">Mute Piano1</button></td>
+	</tr>
+	<tr>
+  	<td><button id="aumentar11" onclick="aumentar11();document.getElementById('demo11').volume+=0.1">+</button></td>
+	<td><input type="text" size="1" id="cantidad11" value="volumen"></td>
+  	<td><button id="disminuir11" onclick="disminuir11();document.getElementById('demo11').volume-=0.1">-</button></td>
+	<td><button id="boton11" class="btn btn-danger" onclick="document.getElementById('demo11').muted = !document.getElementById('demo11').muted">Mute Piano2</button></td>
+	</tr>
+	<tr>
+  	<td><button id="aumentar12" onclick="aumentar12();document.getElementById('demo12').volume+=0.1">+</button></td>
+	<td><input type="text" size="1" id="cantidad12" value="volumen"></td>
+  	<td><button id="disminuir12" onclick="disminuir12();document.getElementById('demo12').volume-=0.1">-</button></td>
+	<td><button id="boton12" class="btn btn-danger" onclick="document.getElementById('demo12').muted = !document.getElementById('demo12').muted">Mute Strings</button></td>
+	</tr>
+	</table>
 	<link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
