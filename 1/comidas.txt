@@ -1,5 +1,0 @@
-maiz		28/04		dejar maiz
-huevo		4/05		dejar huevo
-carne
-cebolla
-papas
